@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Kerala IoT Challenge Level-I | This page is used to keep track of the experiments in Level-I</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Kerala IoT Challenge Level-I" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This page is used to keep track of the experiments in Level-I" />
+<meta property="og:description" content="This page is used to keep track of the experiments in Level-I" />
+<link rel="canonical" href="/" />
+<meta property="og:url" content="/" />
+<meta property="og:site_name" content="Kerala IoT Challenge Level-I" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Kerala IoT Challenge Level-I" />
+<meta name="google-site-verification" content="pfJzizPHv1XlwdR-KiyEyndV4qlVHUMGdNXK68KLt84" />
+<script type="application/ld+json">
+{"headline":"Kerala IoT Challenge Level-I","@type":"WebSite","url":"/","name":"Kerala IoT Challenge Level-I","description":"This page is used to keep track of the experiments in Level-I","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Kerala IoT Challenge Level-I</h1>
+      <h2 class="project-tagline">This page is used to keep track of the experiments in Level-I</h2>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <p>Hi, I am  Milan Deepak. I am a first year Electronics and Communications student @ <a href="http://mgmits.ac.in/" target="_blank">Muthoot Institute of Technology and Science</a>.</p>
+
+<h1 id="experiments">Experiments</h1>
+
+<h2 id="exp-1--hello-world-led-blinking">Exp 1 : Hello World LED Blinking</h2>
+
+<h3 id="hardware-needed">Hardware Needed:</h3>
+<ul>
+  <li>Arduino Uno Board x1</li>
+  <li>USB Cable x1</li>
+  <li>LED (Any Color) x1</li>
+  <li>220 OHM Resistor X1</li>
+  <li>Breadboard</li>
+  <li>Jumper Wires (Male to Male ) x2</li>
+</ul>
+
+<h3 id="code">Code</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int ledPin = 10; // define digital pin 10.
+void setup(){
+ pinMode(ledPin, OUTPUT);// define pin with LED connected as output.
+}
+void loop()
+{
+ digitalWrite(ledPin, HIGH); // set the LED on.
+ delay(1000); // wait for a second.
+ digitalWrite(ledPin, LOW); // set the LED off.
+ delay(1000); // wait for a second
+}
+</code></pre></div></div>
+
+<h3 id="video">Video</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EjBNj1aGhZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<hr />
+
+<h2 id="exp-2--traffic-light">Exp 2 : Traffic Light</h2>
+
+<h3 id="hardware-required">Hardware required</h3>
+<ul>
+  <li>Arduino board x1</li>
+  <li>USB cable x1</li>
+  <li>Red M5 LED x1</li>
+  <li>Yellow M5 LED x1</li>
+  <li>Green M5 LED x1</li>
+  <li>220Ω resistor x3</li>
+  <li>Breadboard x1</li>
+  <li>Breadboard jumper wires as needed</li>
+</ul>
+
+<h3 id="code-1">Code</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int red =10; // initialize digital pin 8.
+int yellow =7; // initialize digital pin 7.
+int green =4; // initialize digital pin 4.
+void setup(){
+ pinMode(red, OUTPUT);// set the pin with red LED as “output”
+ pinMode(yellow, OUTPUT); // set the pin with yellow LED as “output”
+ pinMode(green, OUTPUT); // set the pin with green LED as “output”
+}
+void loop(){
+ digitalWrite(green, HIGH);//// turn on green LED
+ delay(5000);// wait 5 seconds
+ digitalWrite(green, LOW); // turn off green LED
+ for(int i=0;i&lt;3;i++){// blinks for 3 times
+  delay(500);// wait 0.5 second
+  digitalWrite(yellow, HIGH);// turn on yellow LED
+  delay(500);// wait 0.5 second
+  digitalWrite(yellow, LOW);// turn off yellow LED
+ } 
+ delay(500);// wait 0.5 second
+ digitalWrite(red, HIGH);// turn on red LED
+ delay(5000);// wait 5 seconds
+ digitalWrite(red, LOW);// turn off red LED
+}
+</code></pre></div></div>
+
+<h3 id="video-1">Video</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-Da8OEcXSas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<hr />
+
+<h2 id="exp-3--led-chasing-effect">Exp 3 : LED Chasing Effect</h2>
+
+<h3 id="hardware-required-1">Hardware required</h3>
+<ul>
+  <li>LED x6</li>
+  <li>Arduino board x1</li>
+  <li>220Ω resistor x6</li>
+  <li>Breadboard x1</li>
+  <li>USB cable x1</li>
+  <li>Breadboard wire x13</li>
+</ul>
+
+<h3 id="code-2">Code</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int first= 2;  // the I/O pin for the first LED
+int last= 6;   // number of LEDs
+void setup(){
+ for (int i = start; i &lt; first + last; i ++){
+  pinMode(i, OUTPUT);   // set I/O pins as output
+ }
+}
+void loop(){
+ for (int i = BASE; i &lt; start +; i ++){
+  digitalWrite(i, LOW);    // set I/O pins as “low”, turn off LEDs one by one.
+  delay(200);        // delay
+}
+ for (int i = BASE; i &lt; BASE + NUM; i ++){
+  digitalWrite(i, HIGH);    // set I/O pins as “high”, turn on LEDs one by one
+  delay(200);        // delay
+ }  
+}
+</code></pre></div></div>
+
+<h3 id="video-2">Video</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dLirEbPWCPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<hr />
+
+<footer align="center">© 2021 Milan Deepak </footer>
+
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>
