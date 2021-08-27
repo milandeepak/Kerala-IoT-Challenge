@@ -121,12 +121,42 @@ ____
 
 ### Hardware required
 * Arduino Uno
-* Button switch x1
-* Red M5 LED x1
-* 220ΩResistor x1
-* 10KΩ Resistor x1
+* Button switch*1
+* Red M5 LED*1
+* 220ΩResistor*1
+* 10KΩ Resistor*1
+* Breadboard*1
+* Breadboard Jumper Wire*6
+* USB cable*1
+
+### Code
+    int ledpin=11;// initialize pin 11
+    int inpin=3;// initialize pin 3
+    int val;// define val
+    void setup()
+    {
+    pinMode(ledpin,OUTPUT);// set LED pin as “output”
+    pinMode(inpin,INPUT);// set button pin as “input”
+    }
+    void loop()
+    {
+    val=digitalRead(inpin);// read the level value of pin 3 and assign if to val
+    if(val==LOW)// check if the button is pressed, if yes, turn on the LED
+    { digitalWrite(ledpin,LOW);}
+    else
+    { digitalWrite(ledpin,HIGH);}
+    }
+### Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xiQ2F2ps62I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+____
+
+## Exp 5 : Buzzer
+
+### Hardware required
+* Arduino Uno
+* Buzzer x1
 * Breadboard x1
-* Breadboard Jumper Wire x6
+* Breadboard Jumper Wire x2
 * USB cable x1
 
 ### Code
@@ -143,4 +173,44 @@ ____
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QN5DBPFhgCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ____
 
+## Exp 6 : RGB LED
 
+### Hardware required
+* Arduino Uno
+* USB Cable x1
+* RGB LED x1
+* Resistor x3
+* Breadboard jumper wire x5
+
+### Code
+    int redpin = 11; //select the pin for the red LED
+    int bluepin =10; // select the pin for the blue LED
+    int greenpin =9;// select the pin for the green LED
+    int val;
+    void setup() {
+      pinMode(redpin, OUTPUT);
+      pinMode(bluepin, OUTPUT);
+      pinMode(greenpin, OUTPUT);
+      Serial.begin(9600);
+    }
+    void loop() 
+    {
+    for(val=255; val>0; val--)
+      {
+      analogWrite(11, val);
+      analogWrite(10, 255-val);
+      analogWrite(9, 128-val);
+      delay(1); 
+      }
+    for(val=0; val<255; val++)
+      {
+      analogWrite(11, val);
+      analogWrite(10, 255-val);
+      analogWrite(9, 128-val);
+      delay(1); 
+      }
+    Serial.println(val, DEC);
+    }
+### Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CHlVNigktpU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+____
