@@ -22,7 +22,7 @@ title: Kerala IoT Challenge Level-I
 email: milandeepak06@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This page is used to keep track of the experiments in Level-I
-baseurl: "milan" # the subpath of your site, e.g. /blog
+baseurl: "Kerala-IoT-Challenge" # the subpath of your site, e.g. /blog
 url: "https://milandeepak.github.io/Kerala-IoT-Challenge/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
