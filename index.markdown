@@ -24,7 +24,8 @@ I have helped in some electronics projects, But I have never done it so seriousl
 
 ### Code
     int ledPin = 10; // define digital pin 10.
-    void setup(){
+    void setup()
+    {
      pinMode(ledPin, OUTPUT);// define pin with LED connected as output.
     }
     void loop()
@@ -58,25 +59,28 @@ ___
     int red =10; // initialize digital pin 8.
     int yellow =7; // initialize digital pin 7.
     int green =4; // initialize digital pin 4.
-    void setup(){
-     pinMode(red, OUTPUT);// set the pin with red LED as “output”
-     pinMode(yellow, OUTPUT); // set the pin with yellow LED as “output”
-     pinMode(green, OUTPUT); // set the pin with green LED as “output”
+    void setup()
+    {
+      pinMode(red, OUTPUT);// set red LED pin as “output”
+      pinMode(yellow, OUTPUT); // set yellow LED pin as  “output”
+      pinMode(green, OUTPUT); // set green LED pin as “output”
     }
-    void loop(){
-     digitalWrite(green, HIGH);//// turn on green LED
-     delay(5000);// wait 5 seconds
-     digitalWrite(green, LOW); // turn off green LED
-     for(int i=0;i<3;i++){// blinks for 3 times
+    void loop()
+    {
+      digitalWrite(green, HIGH);// turn on green LED
+      delay(5000);// wait 5 seconds
+      digitalWrite(green, LOW); // turn off green LED
+      for(int i=0;i<3;i++)// blinks for 3 times
+      {
+       delay(500);// wait 0.5 second
+       digitalWrite(yellow, HIGH);// turn on yellow LED
+       delay(500);// wait 0.5 second
+       digitalWrite(yellow, LOW);// turn off yellow LED
+      } 
       delay(500);// wait 0.5 second
-      digitalWrite(yellow, HIGH);// turn on yellow LED
-      delay(500);// wait 0.5 second
-      digitalWrite(yellow, LOW);// turn off yellow LED
-     } 
-     delay(500);// wait 0.5 second
-     digitalWrite(red, HIGH);// turn on red LED
-     delay(5000);// wait 5 seconds
-     digitalWrite(red, LOW);// turn off red LED
+      digitalWrite(red, HIGH);// turn on red LED
+      delay(5000);// wait 5 seconds
+      digitalWrite(red, LOW);// turn off red LED
     }
 
 ### Video
@@ -213,4 +217,36 @@ ____
     }
 ### Video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CHlVNigktpU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+____
+
+### Exp 7 : LDR Light Sensor
+
+### Hardware required
+* Arduino Uno Board
+* Photo Resistorx1
+* Red M5 LED x1
+* 10KΩ Resistor x1
+* 220Ω Resistor x1
+* Breadboard x1
+* Breadboard Jumper Wire x5
+* USB cable x1
+
+### Code
+    int potpin=0;// initialize analog pin 0, connected with photovaristor
+    int ledpin=11;// initialize digital pin 11, 
+    int val=0;// initialize variable val
+    void setup()
+    {
+      pinMode(ledpin,OUTPUT);// set digital pin 11 as “output”
+      Serial.begin(9600);// set baud rate at “9600”
+    }
+    void loop()
+    {
+      val=analogRead(potpin);// read the value of the sensor and assign it to val
+      Serial.println(val);// display the value of val
+      analogWrite(ledpin,val/4);// set up brightness（maximum value 255）
+      delay(10);// wait for 0.01 
+    }
+### Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ae_OpAmNPWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ____
