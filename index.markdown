@@ -219,7 +219,7 @@ ____
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CHlVNigktpU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ____
 
-### Exp 7 : LDR Light Sensor
+## Exp 7 : LDR Light Sensor
 
 ### Hardware required
 * Arduino Uno Board
@@ -247,6 +247,80 @@ ____
       analogWrite(ledpin,val/4);// set up brightness（maximum value 255）
       delay(10);// wait for 0.01 
     }
+
 ### Video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ae_OpAmNPWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ____
+
+## Exp 8
+### Hardware required
+### Code
+### Video
+
+## Exp 8 :Flame Sensor
+
+### Hardware required
+* Arduino Uno Board x1
+* Flame Sensor x1
+* Buzzer x1
+* 10K Resistor x1
+* Breadboard Jumper Wire x6
+* USB cable x1
+
+### Code
+    int flame=0;// select analog pin 0 for the sensor
+    int Beep=9;// select digital pin 9 for the buzzer
+    int val=0;// initialize variable
+    void setup() 
+    {
+      pinMode(Beep,OUTPUT);// set LED pin as “output”
+      pinMode(flame,INPUT);// set buzzer pin as “input”
+      Serial.begin(9600);// set baud rate at “9600”
+    } 
+    void loop() 
+    { 
+      val=analogRead(flame);// read the analog value of the sensor 
+      Serial.println(val);// output and display the analog value
+      if(val>=600)// when the analog value is larger than 600, the buzzer will buzz
+      {  
+        digitalWrite(Beep,HIGH); 
+      }
+      else 
+      {  
+        digitalWrite(Beep,LOW); 
+      }
+      delay(500); 
+    }
+
+### Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rg8-zSdH2Bo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Exp 9 : LM35 Temperature Sensor
+
+### Hardware required
+* Arduino Uno  Board x1
+* LM35 x1
+* Breadboard x1
+* Breadboard Jumper Wire x5
+* USB cable x1
+
+### Code
+    int potPin = 0; // initialize analog pin 0 for LM35 temperature sensor
+    void setup()
+    {
+      Serial.begin(9600);// set baud rate at”9600”
+    }
+    void loop()
+    {
+      int val;// define variable
+      int dat;// define variable
+      val=analogRead(0);// read the analog value of the sensor and assign it to val
+      dat=(125*val)>>8;// temperature calculation formula
+      Serial.print("Tep");// output and display characters beginning with Tep
+      Serial.print(dat);// output and display value of dat
+      Serial.println("C");// display “C” characters
+      delay(500);// wait for 0.5 second
+    }
+
+### Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rg8-zSdH2Bo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
