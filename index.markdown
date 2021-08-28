@@ -252,11 +252,6 @@ ____
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ae_OpAmNPWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ____
 
-## Exp 8
-### Hardware required
-### Code
-### Video
-
 ## Exp 8 :Flame Sensor
 
 ### Hardware required
