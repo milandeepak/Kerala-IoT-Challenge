@@ -232,20 +232,21 @@ ____
 * USB cable x1
 
 ### Code
-    int potpin=0;// initialize analog pin 0, connected with photovaristor
-    int ledpin=11;// initialize digital pin 11, 
-    int val=0;// initialize variable val
-    void setup()
-    {
-      pinMode(ledpin,OUTPUT);// set digital pin 11 as “output”
-      Serial.begin(9600);// set baud rate at “9600”
+    void setup() {
+      pinMode(8,INPUT);
+      pinMode(9,OUTPUT);
+      Serial.begin(9600); //initialise serial monitor
     }
-    void loop()
-    {
-      val=analogRead(potpin);// read the value of the sensor and assign it to val
-      Serial.println(val);// display the value of val
-      analogWrite(ledpin,val/4);// set up brightness（maximum value 255）
-      delay(10);// wait for 0.01 
+
+    void loop() {
+      int temp=digitalRead(8);       //assign value of LDR sensor to a temporary variable
+      Serial.println("Intensity="); //print on serial monitor using ""
+      Serial.println(temp);         //display output on serial monitor
+      delay(300);
+      if(temp==HIGH)               //HIGH means,light got blocked
+      digitalWrite(9,HIGH);        //if light is not present,LED on
+      else
+      digitalWrite(9,LOW);         //if light is present,LED off
     }
 
 ### Video
