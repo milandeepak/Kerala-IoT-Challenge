@@ -28,7 +28,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-remote_theme: pages-themes/tactile@v0.2.0
+remote_theme: pages-themes/hacker@v0.2.0
 plugins:
 - jekyll-remote-theme 
 
@@ -52,4 +52,4 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-theme: jekyll-theme-tactile
+theme: jekyll-theme-hacker
