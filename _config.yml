@@ -28,7 +28,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-remote_theme: aterenin/minima-reboot
+remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme 
 
@@ -52,4 +52,4 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-theme: minima-reboot
+theme: jekyll-theme-cayman
