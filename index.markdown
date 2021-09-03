@@ -8,6 +8,12 @@ layout: default
 Hi, I am  Milan Deepak. I am a first year Electronics and Communications student @ <a href="http://mgmits.ac.in/" target="_blank">Muthoot Institute of Technology and Science</a>.
 I have helped in some electronics projects, But I have never done it so seriously until now. I love to learn new things and I like to be updated with development in the Tech Industry. I am Fascinated  about Tech, Space and related stuff.  
 
+<ul>
+  <li><a href="#Exp 1">Exp 1</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
 
 
 # Experiments
@@ -323,7 +329,7 @@ ___
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dGA-OZRmgXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ___
 
-## Exp 11 :Potentiometer analog Value Reading
+## Exp 11 : Potentiometer analog Value Reading
 
 ### Hardware required
 * Arduino Uno Board x1
@@ -353,4 +359,335 @@ ___
 
 ### Video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uM4BWQmw10k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+___
 
+## Exp 12 : 7 Segment Display
+
+### Hardware required
+* Arduino Uno Board x1
+* 1-digit LED Segment Display x1
+* 220Ω Resistor x8
+* Breadboard x1
+* Breadboard Jumper Wires as needed
+* USB cable x1
+
+### Code
+    int a=7;// set digital pin 7 for segment a
+    int b=6;// set digital pin 6 for segment b
+    int c=5;// set digital pin 5 for segment c
+    int d=10;// set digital pin 10 for segment d
+    int e=11;// set digital pin 11 for segment e
+    int f=8;// set digital pin 8 for segment f
+    int g=9;// set digital pin 9 for segment g
+    int dp=4;// set digital pin 4 for segment dp
+    void digital_0(void) // display number 5
+    {
+      unsigned char j;
+      digitalWrite(a,HIGH);
+      digitalWrite(b,HIGH);
+      digitalWrite(c,HIGH);
+      digitalWrite(d,HIGH);
+      digitalWrite(e,HIGH);
+      digitalWrite(f,HIGH);
+      digitalWrite(g,LOW);
+      digitalWrite(dp,LOW);
+    }
+    void digital_1(void) // display number 1
+    {
+      unsigned char j;
+      digitalWrite(c,HIGH);// set level as “high” for pin 5, turn on segment c
+      digitalWrite(b,HIGH);// turn on segment b
+      for(j=7;j<=11;j++)// turn off other segments
+      digitalWrite(j,LOW);
+      digitalWrite(dp,LOW);// turn off segment dp
+    }
+    void digital_2(void) // display number 2
+    {
+      unsigned char j;
+      digitalWrite(b,HIGH);
+      digitalWrite(a,HIGH);
+      for(j=9;j<=11;j++)
+      digitalWrite(j,HIGH);
+      digitalWrite(dp,LOW);
+      digitalWrite(c,LOW);
+      digitalWrite(f,LOW);
+    }
+    void digital_3(void) // display number 3
+    {
+      digitalWrite(g,HIGH);
+      digitalWrite(a,HIGH);
+      digitalWrite(b,HIGH);
+      digitalWrite(c,HIGH);
+      digitalWrite(d,HIGH);
+      digitalWrite(dp,LOW);
+      digitalWrite(f,LOW);
+      digitalWrite(e,LOW);
+    }
+    void digital_4(void) // display number 4
+    {
+      digitalWrite(c,HIGH);
+      digitalWrite(b,HIGH);
+      digitalWrite(f,HIGH);
+      digitalWrite(g,HIGH);
+      digitalWrite(dp,LOW);
+      digitalWrite(a,LOW);
+      digitalWrite(e,LOW);
+      digitalWrite(d,LOW);
+    }
+    void digital_5(void) // display number 5
+    {
+      unsigned char j;
+      digitalWrite(a,HIGH);
+      digitalWrite(b, LOW);
+      digitalWrite(c,HIGH);
+      digitalWrite(d,HIGH);
+      digitalWrite(e, LOW);
+      digitalWrite(f,HIGH);
+      digitalWrite(g,HIGH);
+      digitalWrite(dp,LOW);
+    }
+    void digital_6(void) // display number 6
+    {
+      unsigned char j;
+      for(j=7;j<=11;j++)
+      digitalWrite(j,HIGH);
+      digitalWrite(c,HIGH);
+      digitalWrite(dp,LOW);
+      digitalWrite(b,LOW);
+    }
+    void digital_7(void) // display number 7
+    {
+      unsigned char j;
+      for(j=5;j<=7;j++)
+      digitalWrite(j,HIGH);
+      digitalWrite(dp,LOW);
+      for(j=8;j<=11;j++)
+      digitalWrite(j,LOW);
+    }
+    void digital_8(void) // display number 8
+    {
+      unsigned char j;
+      for(j=5;j<=11;j++)
+      digitalWrite(j,HIGH);
+      digitalWrite(dp,LOW);
+    }
+    void digital_9(void) // display number 5
+    {
+      unsigned char j;
+      digitalWrite(a,HIGH);
+      digitalWrite(b,HIGH);
+      digitalWrite(c,HIGH);
+      digitalWrite(d,HIGH);
+      digitalWrite(e, LOW);
+      digitalWrite(f,HIGH);
+      digitalWrite(g,HIGH);
+      digitalWrite(dp,LOW);
+    }
+    void setup()
+    {
+      int i;// set variable
+      for(i=4;i<=11;i++)
+      pinMode(i,OUTPUT);// set pin 4-11as “OUTPUT”
+    }
+    void loop()
+    {
+     while(1)
+     {
+      digital_0();// display number 0
+      delay(1000);// wait for 1s
+      digital_1();// display number 1
+      delay(1000);// wait for 1s
+      digital_2();// display number 2
+      delay(1000); // wait for 1s
+      digital_3();// display number 3
+      delay(1000); // wait for 1s
+      digital_4();// display number 4
+      delay(1000); // wait for 1s
+      digital_5();// display number 5
+      delay(1000); // wait for 1s
+      digital_6();// display number 6
+      delay(1000); // wait for 1s
+      digital_7();// display number 7
+      delay(1000); // wait for 1s
+      digital_8();// display number 8
+      delay(1000); // wait for 1s
+      digital_9();// display number 9
+      delay(1000); // wait for 1s
+     }
+    }
+
+### Video
+<iframe width="400" height="315" src="https://www.youtube.com/embed/ZbsfRioPXck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+___
+
+# Assignments
+
+## Assignment-1 : Create an automatic night lamp model using LDR and LED
+
+### Code
+
+    void setup() 
+    {
+      pinMode(8,INPUT);
+      pinMode(9,OUTPUT);
+      pinMode(10,OUTPUT);
+      pinMode(11,OUTPUT);
+      pinMode(12,OUTPUT);
+      Serial.begin(9600); //initialise serial monitor
+
+    }
+
+    void loop() 
+    {
+      int temp=digitalRead(8);      //assign value of LDR sensor to a temporary variable
+      delay(300);
+      if(temp==HIGH)//HIGH means,light got blocked
+      {
+        Serial.println("LED ON"); 
+        for(int i=8;i<=11;i++)
+          digitalWrite(i,HIGH);
+
+      } 
+      else
+      {
+        Serial.println("LED OFF");
+        for(int i=8;i<=11;i++)
+          digitalWrite(i,LOW);
+    }
+    }
+
+
+### Video
+<iframe width="400" height="315" src="https://www.youtube.com/embed/AVfnQ8r4tMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Assignment-2 : Create a Digital Dice using 7 Segment Display and Push Button
+
+### Code
+    int buttonPin = 3;
+    int buttonState;
+    long ran;
+    int a=7;// set digital pin 7 for segment a
+    int b=6;// set digital pin 6 for segment b
+    int c=5;// set digital pin 5 for segment c
+    int d=10;// set digital pin 10 for segment d
+    int e=11;// set digital pin 11 for segment e
+    int f=8;// set digital pin 8 for segment f
+    int g=9;// set digital pin 9 for segment g
+    int dp=4;// set digital pin 4 for segment dp
+    int time = 2000;
+    void digital_1(void) // display number 1
+    {
+      unsigned char j;
+      digitalWrite(c,HIGH);// set level as “high” for pin 5, turn on segment c
+      digitalWrite(b,HIGH);// turn on segment b
+      for(j=7;j<=11;j++)// turn off other segments
+      digitalWrite(j,LOW);
+      digitalWrite(dp,LOW);// turn off segment dp
+    }
+    void digital_2(void) // display number 2
+    {
+      unsigned char j;
+      digitalWrite(b,HIGH);
+      digitalWrite(a,HIGH);
+      for(j=9;j<=11;j++)
+      digitalWrite(j,HIGH);
+      digitalWrite(dp,LOW);
+      digitalWrite(c,LOW);
+      digitalWrite(f,LOW);
+    }
+    void digital_3(void) // display number 3
+    {
+      digitalWrite(g,HIGH);
+      digitalWrite(a,HIGH);
+      digitalWrite(b,HIGH);
+      digitalWrite(c,HIGH);
+      digitalWrite(d,HIGH);
+      digitalWrite(dp,LOW);
+      digitalWrite(f,LOW);
+      digitalWrite(e,LOW);
+    }
+    void digital_4(void) // display number 4
+    {
+      digitalWrite(c,HIGH);
+      digitalWrite(b,HIGH);
+      digitalWrite(f,HIGH);
+      digitalWrite(g,HIGH);
+      digitalWrite(dp,LOW);
+      digitalWrite(a,LOW);
+      digitalWrite(e,LOW);
+      digitalWrite(d,LOW);
+    }
+    void digital_5(void) // display number 5
+    {
+      unsigned char j;
+      digitalWrite(a,HIGH);
+      digitalWrite(b, LOW);
+      digitalWrite(c,HIGH);
+      digitalWrite(d,HIGH);
+      digitalWrite(e, LOW);
+      digitalWrite(f,HIGH);
+      digitalWrite(g,HIGH);
+      digitalWrite(dp,LOW);
+    }
+    void digital_6(void) // display number 6
+    {
+      unsigned char j;
+      for(j=7;j<=11;j++)
+      digitalWrite(j,HIGH);
+      digitalWrite(c,HIGH);
+      digitalWrite(dp,LOW);
+      digitalWrite(b,LOW);
+    }
+    void setup()
+    {
+      int i;// set variable
+      for(i=4;i<=11;i++)
+      pinMode(i,OUTPUT);// set pin 4-11as “output”
+      randomSeed(analogRead(0));
+    }
+    void loop()
+    {
+      buttonState = digitalRead(buttonPin);
+        if (buttonState == HIGH){
+          ran = random(1, 7);
+          if(ran == 1){
+            digital_1();// display number 1
+            delay(time);// wait for 2s
+            }  
+          if(ran == 2){
+            digital_2();// display number 2
+            delay(time);// wait for 2s
+            }
+          if(ran == 3){
+            digital_3();// display number 3
+            delay(time);// wait for 2s
+            }
+          if(ran == 4){
+            digital_4();// display number 4
+            delay(time);// wait for 2s
+            }  
+          if(ran == 5){
+            digital_5();// display number 5
+            delay(time);// wait for 2s
+            }  
+          if(ran == 6){
+            digital_6();// display number 6
+            delay(time);// wait for 2s
+            } 
+        }
+       else 
+       { 
+          digitalWrite(a,LOW);
+          digitalWrite(b,LOW);
+          digitalWrite(c,LOW);
+          digitalWrite(d,LOW);
+          digitalWrite(e,LOW);
+          digitalWrite(f,LOW);
+          digitalWrite(g,LOW);
+          digitalWrite(dp,LOW);
+      } 
+          
+    } 
+
+### Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aHDFnTuWzFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
