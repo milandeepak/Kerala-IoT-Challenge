@@ -4,19 +4,12 @@
 
 layout: default
 ---
-
-Hi, I am  Milan Deepak. I am a first year Electronics and Communications student @ <a href="http://mgmits.ac.in/" target="_blank">Muthoot Institute of Technology and Science</a>.
-I have helped in some electronics projects, But I have never done it so seriously until now. I love to learn new things and I like to be updated with development in the Tech Industry. I am Fascinated  about Tech, Space and related stuff.  
-
-<ul>
-  <li><a href="#Exp 1">Exp 1</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
+# <u>**About Me**</u>
+Hi, I am  Milan Deepak. I am a first year Electronics and Communications student  @ <a href="http://mgmits.ac.in/" target="_blank">Muthoot Institute of Technology and Science</a>.
+I have helped in some electronics projects. I love to learn new things and I like to be updated with development in the Tech Industry. I am Fascinated  about Tech, Space and related stuff.  
 
 
-# Experiments
+# <u>**Experiments**</u>
 
 ## Exp 1 : Hello World LED Blinking
 
@@ -520,7 +513,7 @@ ___
 <iframe width="600" height="315" src="https://www.youtube.com/embed/ZbsfRioPXck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ___
 
-# Assignments
+# <u>**Assignments**</u>
 
 ## Assignment-1 : Create an automatic night lamp model using LDR and LED
 
