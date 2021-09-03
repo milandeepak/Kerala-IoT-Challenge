@@ -558,7 +558,7 @@ ___
 
 
 ### Video
-<iframe width="400" height="315" src="https://www.youtube.com/embed/AVfnQ8r4tMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="400" height="250" src="https://www.youtube.com/embed/AVfnQ8r4tMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Assignment-2 : Create a Digital Dice using 7 Segment Display and Push Button
 
