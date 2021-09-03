@@ -690,4 +690,4 @@ ___
 
 <a href="https://www.instagram.com/_.that_mallu_payyan123._/"><img src="https://i.ibb.co/jywzX1m/brand-instagram-icon-151534.png" alt="brand-instagram-icon-151534"  width="50"></a>
 <a href="https://twitter.com/sreekuty1234"><img src="https://i.ibb.co/18p0WvH/TWITTER-icon-icons-com-62686.png" alt="TWITTER-icon-icons-com-62686"  width="50" height="50"></a>
-<a href="www.linkedin.com/in/milan-deepak"><img src="https://i.ibb.co/dLyhg39/free-linkedin-icon-112-thumb.png" alt="free-linkedin-icon-112-thumb"  width="50" height="50"></a>
+<a href="https://www.linkedin.com/in/milan-deepak/"><img src="https://i.ibb.co/dLyhg39/free-linkedin-icon-112-thumb.png" alt="free-linkedin-icon-112-thumb"  width="50" height="50"></a>
