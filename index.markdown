@@ -551,6 +551,7 @@ ___
 
 ### Video
 <iframe width="600" height="315" src="https://www.youtube.com/embed/AVfnQ8r4tMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+___
 
 ## Assignment-2 : Create a Digital Dice using 7 Segment Display and Push Button
 
@@ -683,3 +684,9 @@ ___
 
 ### Video
 <iframe width="600" height="315" src="https://www.youtube.com/embed/aHDFnTuWzFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+___
+
+<a href="https://www.qries.com/">
+         <img alt="instagram" src="https://github.com/milandeepak/test/blob/ghpages/brand_instagram_icon_151534.png"
+         width="150" height="70">
+___
