@@ -44,7 +44,7 @@ I have helped in some electronics projects, But I have never done it so seriousl
 
 
 ### Video
-<iframe width="400" height="250" src="https://www.youtube.com/embed/EjBNj1aGhZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="315" src="https://www.youtube.com/embed/EjBNj1aGhZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ___
 
@@ -90,7 +90,7 @@ ___
     }
 
 ### Video
-<iframe width="400" height="250" src="https://www.youtube.com/embed/-Da8OEcXSas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="315" src="https://www.youtube.com/embed/-Da8OEcXSas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ___
 
@@ -124,7 +124,7 @@ ___
     }
 
 ### Video
-<iframe width="400" height="250" src="https://www.youtube.com/embed/dLirEbPWCPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="315" src="https://www.youtube.com/embed/dLirEbPWCPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ____
 
 ## Exp 4 : Button Controlled LED
@@ -157,7 +157,7 @@ ____
     { digitalWrite(ledpin,HIGH);}
     }
 ### Video
-<iframe width="400" height="250" src="https://www.youtube.com/embed/xiQ2F2ps62I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="315" src="https://www.youtube.com/embed/xiQ2F2ps62I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ____
 
 ## Exp 5 : Buzzer
@@ -180,7 +180,7 @@ ____
     digitalWrite(buzzer, HIGH); // produce sound
     }
 ### Video
-<iframe width="400" height="250" src="https://www.youtube.com/embed/QN5DBPFhgCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="315" src="https://www.youtube.com/embed/QN5DBPFhgCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ____
 
 ## Exp 6 : RGB LED
@@ -222,7 +222,7 @@ ____
     Serial.println(val, DEC);
     }
 ### Video
-<iframe width="400" height="250" src="https://www.youtube.com/embed/CHlVNigktpU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="315" src="https://www.youtube.com/embed/CHlVNigktpU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ____
 
 ## Exp 7 : LDR Light Sensor
@@ -256,7 +256,7 @@ ____
     }
 
 ### Video
-<iframe width="400" height="250" src="https://www.youtube.com/embed/ae_OpAmNPWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="315" src="https://www.youtube.com/embed/ae_OpAmNPWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ____
 
 ## Exp 8 :Flame Sensor
@@ -295,7 +295,7 @@ ____
     }
 
 ### Video
-<iframe width="400" height="250" src="https://www.youtube.com/embed/Rg8-zSdH2Bo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="315" src="https://www.youtube.com/embed/Rg8-zSdH2Bo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ___
 
 ## Exp 9 : LM35 Temperature Sensor
@@ -326,7 +326,7 @@ ___
     }
 
 ### Video
-<iframe width="400" height="250" src="https://www.youtube.com/embed/dGA-OZRmgXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="315" src="https://www.youtube.com/embed/dGA-OZRmgXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ___
 
 ## Exp 11 : Potentiometer analog Value Reading
@@ -358,7 +358,7 @@ ___
     }
 
 ### Video
-<iframe width="400" height="250" src="https://www.youtube.com/embed/uM4BWQmw10k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="315" src="https://www.youtube.com/embed/uM4BWQmw10k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ___
 
 ## Exp 12 : 7 Segment Display
@@ -517,7 +517,7 @@ ___
     }
 
 ### Video
-<iframe width="400" height="250" src="https://www.youtube.com/embed/ZbsfRioPXck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="315" src="https://www.youtube.com/embed/ZbsfRioPXck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ___
 
 # Assignments
@@ -558,7 +558,7 @@ ___
 
 
 ### Video
-<iframe width="400" height="250" src="https://www.youtube.com/embed/AVfnQ8r4tMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="315" src="https://www.youtube.com/embed/AVfnQ8r4tMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Assignment-2 : Create a Digital Dice using 7 Segment Display and Push Button
 
@@ -690,4 +690,4 @@ ___
     } 
 
 ### Video
-<iframe width="400" height="250" src="https://www.youtube.com/embed/aHDFnTuWzFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="315" src="https://www.youtube.com/embed/aHDFnTuWzFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
