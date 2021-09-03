@@ -686,7 +686,8 @@ ___
 <iframe width="600" height="315" src="https://www.youtube.com/embed/aHDFnTuWzFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ___
 
-<a href="https://www.qries.com/">
-         <img alt="instagram" src="https://github.com/milandeepak/test/blob/ghpages/brand_instagram_icon_151534.png"
-         width="150" height="70">
-___
+#### Connect With me
+
+<a href="https://www.instagram.com/_.that_mallu_payyan123._/"><img src="https://i.ibb.co/jywzX1m/brand-instagram-icon-151534.png" alt="brand-instagram-icon-151534" border="0" width="50"></a>
+<a href=https://twitter.com/sreekuty1234><img src="https://i.ibb.co/18p0WvH/TWITTER-icon-icons-com-62686.png" alt="TWITTER-icon-icons-com-62686" border="0" width="50" height="50"></a>
+<a href=www.linkedin.com/in/milan-deepak><img src="https://i.ibb.co/dLyhg39/free-linkedin-icon-112-thumb.png" alt="free-linkedin-icon-112-thumb" border="0" width="50" height="50"></a>
