@@ -330,6 +330,133 @@ ___
 <iframe width="600" height="315" src="https://www.youtube.com/embed/dGA-OZRmgXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ___
 
+## Exp 10 : IR Remote Control Using TSOP
+
+### Hardware required
+* Arduino Uno Board x1
+* Infrared Receiver x1
+* Infrared Remote Controller x1
+* Breadboard x1
+* LED x2
+* 220ΩResistor x2
+* Breadboard Jumper Wires as needed
+* USB cable x1
+
+### Code
+    #include <IRremote.h>
+    int RECV_PIN = 11;
+    int LED1 = 2;
+    int LED2 = 3;
+    long on1  =0xEFB24D;
+    long on2 = 0xEF728D;
+    IRrecv irrecv(RECV_PIN);
+    decode_results results;
+    // Dumps out the decode_results structure.
+    // Call this after IRrecv::decode()
+    // void * to work around compiler issue
+    //void dump(void *v) {
+    //  decode_results *results = (decode_results *)v
+    void dump(decode_results *results) {
+      int count = results->rawlen;
+      if (results->decode_type == UNKNOWN) 
+        {
+        Serial.println("Could not decode message");
+        } 
+      else 
+      {
+        if (results->decode_type == NEC) 
+          {
+          Serial.print("Decoded NEC: ");
+          } 
+        else if (results->decode_type == SONY) 
+          {
+          Serial.print("Decoded SONY: ");
+          } 
+        else if (results->decode_type == RC5) 
+          {
+          Serial.print("Decoded RC5: ");
+          } 
+        else if (results->decode_type == RC6) 
+          {
+          Serial.print("Decoded RC6: ");
+          }
+        Serial.print(results->value, HEX);
+        Serial.print(" (");
+        Serial.print(results->bits, DEC);
+        Serial.println(" bits)");
+      }
+        Serial.print("Raw (");
+        Serial.print(count, DEC);
+        Serial.print("): ");
+    for (int i = 0; i < count; i++) 
+        {
+          if ((i % 2) >= 1) {
+          Serial.print(results->rawbuf[i]*USECPERTICK, DEC);
+        } 
+        else  
+        {
+          Serial.print(-(int)results->rawbuf[i]*USECPERTICK, DEC);
+        }
+        Serial.print(" ");
+        }
+          Serial.println("");
+        }
+    void setup()
+    {
+      pinMode(RECV_PIN, INPUT);   
+      pinMode(LED1, OUTPUT);
+      pinMode(LED2, OUTPUT);
+      pinMode(13, OUTPUT);
+      Serial.begin(9600);
+      irrecv.enableIRIn(); // Start the receiver
+    }
+    int on =0;
+    unsigned long last = millis();
+    void loop() 
+    {
+      if (irrecv.decode(&results)) 
+      {
+        // If it's been at least 1/4 second since the last
+        // IR received, toggle the relay
+        if (millis() - last > 250) 
+          {
+            on =  ! on;
+    //        digitalWrite(8, on ? HIGH : LOW);
+            digitalWrite(13, on ? HIGH: LOW);
+           dump(&results);
+          }
+        if (results.value == on1 ){
+          digitalWrite(LED1, HIGH);
+          delay(2000);
+          digitalWrite(LED1,LOW);
+        } 
+        if (results.value == on2 ){
+          digitalWrite(LED2, HIGH);
+          delay(2000);
+          digitalWrite(LED2,LOW);
+        }
+        
+        last = millis();      
+    irrecv.resume(); // Receive the next value
+      }
+    }
+
+### Video
+<iframe width="600" height="315" src="https://www.youtube.com/embed/TEvZmlac-Ak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Issues faced
+ <p> While compiling the code for this experiment, I got a "stray/302" error. When I searched it up here <a href="https://stackoverflow.com/questions/19198332/compilation-error-stray-302-in-program-etc">Link</a> , I realised that it was because of character encoding error that happens while copying the code. So after removing them, when I compiled the code, still there were still errors. So I contacted a mentor, who told me that it was the IRremote Library issue. He told me to download this <a href="https://drive.google.com/drive/folders/1y7ny_D1WQC2eSAbUPxqiXMtTvcbymJLZ?usp=sharing">IRremote Library</a> and add it in the Arduino Libraries location(Documents\Arduino\libraries) and selecting it from the include library -> add .zip library option in the Arduino IDE. 
+ After this, the code compiled without any errors(though there were some warnings, which the mentor told me to ignore).
+  </p>
+  <p>After this, when I used an IR remote to test the circuit, the LEDs weren't lighting up. Thats when I happen to watch a video given in the course, in which it was explained that in IR remotes different buttons gave out different codes, which the IR reciever decoded. So what I did was when I checked the Serial Monitor, while clicking the buttons, I saw that it was displaying the code of the button pressed like this : 
+ <img src="https://i.ibb.co/xYtW5hj/Screenshot-2021-09-04-221334-LI.jpg" alt="COM3" >
+  So i assigned this code with 0x, like: 0xEF728D to 
+  the  long on1  = 0xEF728D; replacing long on1  = 0x00FF6897;
+  Repeated this for the other variables. Finally the LEDs starting lighting up when buttons were pressed.
+  I am glad that I faced this issue, because I got learn more about the working of a IR remote, IR reciever and the IRremote Library. 
+  </p>
+___
+
 ## Exp 11 : Potentiometer analog Value Reading
 
 ### Hardware required
