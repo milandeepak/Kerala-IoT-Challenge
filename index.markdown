@@ -819,8 +819,8 @@ ___
     } 
 
 ### Video
-<video controls>
-  <source="https://www.youtube.com/embed/aHDFnTuWzFo">
+<video width="320" height="200" controls>
+  <source src="https://youtu.be/aHDFnTuWzFo" type="video/mp4">
 </video>
 
 ___
