@@ -819,6 +819,9 @@ ___
     } 
 
 ### Video
-<iframe width="600" height="315" src="https://www.youtube.com/embed/aHDFnTuWzFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<video controls>
+  <source="https://www.youtube.com/embed/aHDFnTuWzFo">
+</video>
+
 ___
 ___
