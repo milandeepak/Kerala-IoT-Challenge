@@ -4,15 +4,11 @@
 
 layout: default
 ---
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
 # <u><b>Kerala IoT Challenge</b></u>
 <blockquote>
   <p><strong>Foxlab Makerspace</strong> in association with <strong>GTech - Group of Technology Companies</strong> in Kerala is launching our prestigious program  <strong>“Kerala&nbsp;IoT Challenge 2021”</strong>,  with a vision to mould 100 IoT experts in Kerala, hosting on the µLearn platform. <strong>Kerala IoT Challenge</strong> is a program designed in 4 levels followed by a hackathon to identify and train quality industry leaders in the IoT domain, while any novice learner can start with layer 1 and others can enter laterally to the desired layer after an evaluation.</p>
 </blockquote>
-
-<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="milan-deepak" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/milan-deepak?trk=profile-badge">Milan Deepak</a></div>
-              
 
 # <u><b>About Me</b></u>
 <blockquote>
