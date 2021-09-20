@@ -822,3 +822,5 @@ ___
 <iframe width="600" height="315" src="https://www.youtube.com/embed/aHDFnTuWzFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ___
 ___
+
+<iframe src="http://www.staggeringbeauty.com/" style="border: 1px inset #ddd" width="498" height="598"></iframe>
