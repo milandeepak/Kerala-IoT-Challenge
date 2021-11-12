@@ -831,6 +831,10 @@ ___
 
 ## Exp 1 : Hello World LED Program Using Blynk App
 
+### About
+ In this experiment, an [Esp 32](https://en.wikipedia.org/wiki/ESP32)  is connected to [Blynk](https://blynk.io/) IoT platform via the internet using Wifi credentials and used to light a LED connected to the G2 pin in Esp 32. 
+ The aim of the experiment is to control the LED connected to the Esp 32 using a switch created in Blynk platform which can be accessed using both Blynk web platform and mobile app. 
+
 ### Hardware Needed
    * Esp 32 x1
    * USB Cable x1
@@ -876,6 +880,57 @@ ___
 ### Video
 <iframe width="600" height="315" src="https://www.youtube.com/embed/6uoSFZrSSdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+## Exp 2 : IoT Remote Light Meter using Arduino IoT Cloud
+
+### About
+In this experiment Esp 32 is connected to [Arduino IoT Cloud](https://create.arduino.cc/iot/) via the internet using Wifi credentials and used to get values from a [LDR](https://en.wikipedia.org/wiki/Photoresistor) connected to G34(one of the analog pin) in Esp 32. The aim of this experiment read the values from the LDR when the light in the room is on or off and measuring them using a Guage and plotting them in a graph.
+
+### Hardware Needed
+   * Esp 32 x1
+   * USB Cable x1
+   * LDR x1
+   * 10K resistor x1
+   * Jumper wires (Female to Female) as needed
+
+### Code
+```
+#include "thingProperties.h"
+
+void setup() {
+ pinMode(34, INPUT);
+ Serial.begin(9600);
+ delay(1500);
+
+  // Defined in thingProperties.h
+  initProperties();
+
+  // Connect to Arduino IoT Cloud
+  ArduinoCloud.begin(ArduinoIoTPreferredConnection);
+
+  /*
+     The following function allows you to obtain more information
+     related to the state of network and IoT Cloud connection and errors
+     the higher number the more granular information you’ll get.
+     The default is 0 (only errors).
+     Maximum is 4
+  */
+  setDebugMessageLevel(2);
+  ArduinoCloud.printDebugInfo();
+}
+
+void loop() {
+  ArduinoCloud.update();
+  int val=analogRead(34);
+ lightsensor=val;
+ Serial.println(val);
+ 
+}
+```
+
+### Video
+
+<iframe width="600" height="315" src="https://www.youtube.com/embed/fZAuJH29knw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ___
 ___
 
