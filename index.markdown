@@ -12,7 +12,7 @@ layout: default
 
 # <u><b>About Me</b></u>
 <blockquote>
-Hi, I am  Milan Deepak. I am a first year Electronics and Communications student  @ <a href="http://mgmits.ac.in/" target="_blank">Muthoot&nbsp; Institute&nbsp; of&nbsp; Technology&nbsp; and&nbsp; Science</a>.
+Hi, I am  Milan Deepak. I am a final year Electronics and Communications student  @ <a href="http://mgmits.ac.in/" target="_blank">Muthoot&nbsp; Institute&nbsp; of&nbsp; Technology&nbsp; and&nbsp; Science. I completed this project in my First Year</a>.
 I have helped in some electronics projects. I love to learn new things and I like to be updated with development in the Tech Industry. I am Fascinated  about Tech, Space and related stuff.  
 </blockquote>
 ____
